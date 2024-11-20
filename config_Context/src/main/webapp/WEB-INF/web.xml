@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+ 
+ 	<servlet>
+ 		<servlet-name>context</servlet-name>
+ 		<servlet-class>com.context.Context</servlet-class>
+ 		
+ 		<!-- Using servletConfig here -->
+ 		<init-param>
+ 			<param-name>l_name</param-name>
+ 			<param-value>Panchal</param-value>
+ 		</init-param>
+ 		
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>context</servlet-name>
+ 		<url-pattern>/context</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<context-param>
+ 		<param-name>f_name</param-name>
+ 		<param-value>Parth</param-value>
+ 	</context-param>
+
+ 	<context-param>
+ 		<param-name>Age</param-name>
+ 		<param-value>19</param-value>
+ 	</context-param>
+ 
+</web-app>
